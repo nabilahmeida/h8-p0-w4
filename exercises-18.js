@@ -1,33 +1,17 @@
 function kaliTerusRekursif(angka) {
-// manual  
     var str = angka.toString();
-    var tampung = 1;
-//    for(var i = 0; i < str.length; i++){
-//        console.log(str[i]);
-//         tampung =  Number(str[i]) * Number(str[i]);
-       
-//    }    
+    var kaliTerus = 1;
         if(angka < 10){
             return angka;
         }
         else{
-              for(var i = 0; i < str.length; i++){
-                  tampung = tampung * Number(str[i]);
-              }  
-
-              return kaliTerusRekursif(tampung);
-              
+            for(var i = 0; i < str.length; i++){
+            kaliTerus = kaliTerus * Number(str[i]);
+            }  
+            
+            return kaliTerusRekursif(kaliTerus);     
         }
-    
-
-  
-//     if(angka.length === 1){
-//         return angka;
-//     }
-//     else{
-//         return 
-//     }
-  }
+}
   
   // TEST CASES
   console.log(kaliTerusRekursif(66)); // 8
