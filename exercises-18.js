@@ -1,16 +1,15 @@
 function kaliTerusRekursif(angka) {
     var str = angka.toString();
     var kaliTerus = 1;
-        if(angka < 10){
-            return angka;
-        }
-        else{
-            for(var i = 0; i < str.length; i++){
+    if (angka < 10) {
+        return angka;
+    }
+    else {
+        for(var i = 0; i < str.length; i++){
             kaliTerus = kaliTerus * Number(str[i]);
-            }  
-            
-            return kaliTerusRekursif(kaliTerus);     
-        }
+        }  
+        return kaliTerusRekursif(kaliTerus);     
+    }
 }
   
   // TEST CASES
